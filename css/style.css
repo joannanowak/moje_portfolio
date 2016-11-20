@@ -112,3 +112,13 @@ span{
 	border-radius: 15px;
 	max-width: 100%; /*odnosimy się do szer parenta*/
 }
+
+/*SKILLS*/
+#skills{
+	text-align: center;
+}
+.styles-icon>figure{
+	display: inline-block;
+}
+
+/*PORTFOLIO*/
