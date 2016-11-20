@@ -1,11 +1,35 @@
-/*kolor dodatkowy: color: #1ac056*/
-
 /*General styles*/
+* {
+	box-sizing: border-box; /*wymiar liczony z paddingiem*/
+}
+
 body {
 	background-color: aquamarine;
 	font-family: 'Lato', sans-serif;
+	font-weight: 100;
 	color: #291f1a;
 	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 300;
+	margin-top: 60px;
+	margin-bottom: 35px;
+	
+}
+section{
+	padding: 0 80px 100px;
+	width: 100%;
+}
+
+section>h2{
+	font-size: 30px;
+	font-weight: 300;
+}
+span{
+	color:#1ac056;
+	font-weight: 400;
 }
 
 #menu{
@@ -56,12 +80,35 @@ body {
 	font-size: 4em;
 	margin: 0;
 }
-span{
-	color:#1ac056;
-	text-transform: uppercase;
-	font-weight: 700;
-}
+
 #header .main-header-content h2{
-	font-weight: 200;
 	margin: 0;
+}
+
+/*ABOUT ME*/
+#about{
+	background-color: #f9fcfe;
+	overflow: hidden; /*powiększa tło do wys kontentu*/
+}
+
+#about >figure{
+	width: 50%;
+	float: left;
+	margin: 0;
+	text-align: center;
+	
+}
+#about > article{
+	width: 50%;
+	float: left;
+	margin: 0;
+	font-weight: 300;
+	line-height: 25px; /*odstęp linii tekstu*/
+}
+#about > figure > img{
+	max-height: 350px;
+	margin: 0;
+	border: 15px white solid;
+	border-radius: 15px;
+	max-width: 100%; /*odnosimy się do szer parenta*/
 }
