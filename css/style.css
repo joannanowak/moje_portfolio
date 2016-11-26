@@ -122,6 +122,9 @@ span{
 #skills #skills-icons figure img{
 	margin-top: 30px;
 }
+#skills>p{
+	font-weight: 300;
+}
 
 /*PORTFOLIO*/
 .images{
@@ -155,9 +158,11 @@ span{
 	background-size: cover;	
 	background: rgba(33,59,80,0.75);
 	opacity: 0;
+	transition: all 0.5s ease-in-out;
 }
 .img_overlay:hover{
 	opacity: 1;
+	transition: all 0.5s ease-in-out;
 }
 .portfolio_content_border{
 	height: 330px;
@@ -169,21 +174,27 @@ span{
 	width: 100%;
 	height: 100%;
 	color: #fff;
+	vertical-align: middle;
 }
 
 .portfolio_content>p{
 	font-size: 16px;
 	margin: 0;
-	margin-bottom: 0;
+	padding: 10px;
+	font-weight: 200;
 }
 .portfolio_content>h6{
 	font-size: 20px;
-	margin-top: 10px;
+	margin-top: 25px;
+	font-weight: 500;
 }
 .portfolio_content>a{
-	font-size: 22px;
+	font-size: 25px;	
 }
 
+.portfolio_content>a:hover{
+	color: grey;
+}
 
 
 /*KONTAKT*/
