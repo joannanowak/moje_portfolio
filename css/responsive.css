@@ -20,6 +20,10 @@
 	}
 	#menu #drop:checked + ul{
 		display: block;
+	}
+	#menu ul{
+		display: none;
+		width: 100%;
 		
 	}
 	
