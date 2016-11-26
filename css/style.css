@@ -166,15 +166,20 @@ span{
 }
 .portfolio_content_border{
 	height: 330px;
+	width: 28%;
 	border: solid 1px white;
-	position: relative;
+	position: absolute;
 	margin: 10px;
 }
 .portfolio_content{
-	width: 100%;
-	height: 100%;
+	position: relative;
+	top: 50%;
 	color: #fff;
-	vertical-align: middle;
+	transform: translateY(-50%);
+}
+
+.portfolio_content a:visited{
+	color: #fff;
 }
 
 .portfolio_content>p{
@@ -208,10 +213,6 @@ span{
 	width: 49%;
 	float: left;
 }
-#contact > #contact-form{
-	width: 49%;
-	float: left;
-}
 address a{
 	color:#1ac056;
 }
@@ -219,33 +220,30 @@ address a:hover{
 	color: gray;
 }
 
+/*FORMULARZ*/
+#contact > #contact-form{
+	width: 49%;
+	float: left;
+}
 input{
 	width: 100%;
 	height: 25px;
 	margin: 10px;
 }
 #contact > #contact-form button {
-	background-color: green;
 	color: white;
-	width: 100px;
+	width: 30%;
 	height: 40px;
 	text-decoration: none;
 	border: 0px solid white;
 	text-transform: uppercase;
 	font-weight: bold;
-	text-align: center;
-	
-}
-
-button{
+	text-align: center;	
+	background-color: #1ac056;
 	float: right;
 }
 
-/*
-button:hover{
-	background-color: gray;
-}
-*/
+
 #contact > #contact-form input[type] {
     background-color: #2b4a64;
     color: white;
@@ -259,6 +257,10 @@ button:hover{
 	height: 100px;
 	margin: 10px;
 }
+
+
+	
+/*ICONS*/
 .icons a{
 	display: inline-block;
 	height: 50px;
@@ -275,7 +277,7 @@ button:hover{
 	background-color: #fff;
 	color: #2b4a64;
 }
-a:visited { 
+.icons a:visited { 
     color: #fff;
 }
 #contact h2{
