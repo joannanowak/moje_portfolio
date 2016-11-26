@@ -124,7 +124,30 @@ span{
 }
 
 /*PORTFOLIO*/
+.images{
+	width: 100%;
+	font-size: 0;
+	height: 350px;
+}
+.portfolio_item{
+	display: inline-block;
+    width: 33.3333%;
+    height: auto;
+	height: 350px;
+	background-repeat: none;
+	background-size: cover;
+}
+#img_left{
+	background: url('../img/portfolio1.jpg');
+	
+}
+#img_center{
+	background: url('../img/portfolio2.jpg');
+}
 
+#img_right{
+	background: url('../img/portfolio4.jpg');
+}
 
 /*KONTAKT*/
 #contact{
@@ -195,8 +218,10 @@ button{
 	margin-right: 20px;
 	margin-top: 75px;
 }
-.icons i:hover{
-	color: gray;
+
+.icons a:hover{
+	background-color: #fff;
+	color: #2b4a64;
 }
 a:visited { 
     color: #fff;
@@ -206,4 +231,9 @@ a:visited {
 }
 #contact-form{
 	margin-top: 100px;
+}
+
+/*FOOTER*/
+footer > p{
+	text-align: center;
 }
