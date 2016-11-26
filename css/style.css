@@ -126,78 +126,74 @@ span{
 	font-weight: 300;
 }
 
+
 /*PORTFOLIO*/
-.images{
+#portfolio .portfolio_items{
 	width: 100%;
 	font-size: 0;
-	height: 350px;
-	text-align: center;
 }
-.portfolio_item{
+#portfolio .single_portfolio_item{
 	display: inline-block;
     width: 33.3333%;
 	height: 350px;
 	background-repeat: none;
 	background-size: cover;
 }
-#img_left{
+#portfolio_item_1{
 	background: url('../img/portfolio1.jpg');
 }
-#img_center{
+#portfolio_item_2{
 	background: url('../img/portfolio2.jpg');
 }
 
-#img_right{
+#portfolio_item_3{
 	background: url('../img/portfolio4.jpg');
 }
 
-.img_overlay{
-	display: inline-block;
+#portfolio .single_portfolio_item .single_portfolio_item_mask{
+	background: rgba(33,59,80,0.8);
+	position: absolute;
     width: 100%;
 	height: 100%;
-	background-size: cover;	
-	background: rgba(33,59,80,0.75);
 	opacity: 0;
 	transition: all 0.5s ease-in-out;
 }
-.img_overlay:hover{
+#portfolio .single_portfolio_item .single_portfolio_item_mask:hover{
 	opacity: 1;
-	transition: all 0.5s ease-in-out;
 }
-.portfolio_content_border{
+#portfolio .single_portfolio_item .single_portfolio_item_mask_border{
 	height: 330px;
-	width: 28%;
 	border: solid 1px white;
 	position: absolute;
 	margin: 10px;
 }
-.portfolio_content{
+#portfolio .single_portfolio_item .single_portfolio_item_content{
 	position: relative;
 	top: 50%;
 	color: #fff;
 	transform: translateY(-50%);
 }
 
-.portfolio_content a:visited{
+#portfolio .single_portfolio_item .single_portfolio_item_content a:visited{
 	color: #fff;
 }
 
-.portfolio_content>p{
+#portfolio .single_portfolio_item .single_portfolio_item_content>p{
 	font-size: 16px;
 	margin: 0;
 	padding: 10px;
 	font-weight: 200;
 }
-.portfolio_content>h6{
+#portfolio .single_portfolio_item .single_portfolio_item_content>h6{
 	font-size: 20px;
 	margin-top: 25px;
 	font-weight: 500;
 }
-.portfolio_content>a{
+#portfolio .single_portfolio_item .single_portfolio_item_content>a{
 	font-size: 25px;	
 }
 
-.portfolio_content>a:hover{
+#portfolio .single_portfolio_item .single_portfolio_item_content>a:hover{
 	color: grey;
 }
 
