@@ -128,18 +128,17 @@ span{
 	width: 100%;
 	font-size: 0;
 	height: 350px;
+	text-align: center;
 }
 .portfolio_item{
 	display: inline-block;
     width: 33.3333%;
-    height: auto;
 	height: 350px;
 	background-repeat: none;
 	background-size: cover;
 }
 #img_left{
 	background: url('../img/portfolio1.jpg');
-	
 }
 #img_center{
 	background: url('../img/portfolio2.jpg');
@@ -148,6 +147,44 @@ span{
 #img_right{
 	background: url('../img/portfolio4.jpg');
 }
+
+.img_overlay{
+	display: inline-block;
+    width: 100%;
+	height: 100%;
+	background-size: cover;	
+	background: rgba(33,59,80,0.75);
+	opacity: 0;
+}
+.img_overlay:hover{
+	opacity: 1;
+}
+.portfolio_content_border{
+	height: 330px;
+	border: solid 1px white;
+	position: relative;
+	margin: 10px;
+}
+.portfolio_content{
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+
+.portfolio_content>p{
+	font-size: 16px;
+	margin: 0;
+	margin-bottom: 0;
+}
+.portfolio_content>h6{
+	font-size: 20px;
+	margin-top: 10px;
+}
+.portfolio_content>a{
+	font-size: 22px;
+}
+
+
 
 /*KONTAKT*/
 #contact{
@@ -191,9 +228,13 @@ input{
 
 button{
 	float: right;
-	
 }
 
+/*
+button:hover{
+	background-color: gray;
+}
+*/
 #contact > #contact-form input[type] {
     background-color: #2b4a64;
     color: white;
