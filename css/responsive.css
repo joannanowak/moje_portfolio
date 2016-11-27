@@ -1,10 +1,30 @@
 @media all and (max-width: 1024px){
-	
-	
-	
+/*	PORTFOLIO*/
+	#portfolio .portfolio-items .single-portfolio-item{
+		display: block;
+		width: 50%;
+	}
+	#portfolio .portfolio-items #portfolio-item-1{
+		width: 50%;
+		display: inline-block;
+	}
+	#portfolio .portfolio-items #portfolio-item-2{
+		width: 50%;
+		display: inline-block;
+	}
+	#portfolio .portfolio-items #portfolio-item-3{
+		width: 100%;
+	}
+	#portfolio .portfolio-items .single-portfolio-item .single-portfolio-item-mask .single-portfolio-item-mask-border .single-portfolio-item-content{
+		left: 0;
+		right: 0;
+	}
 }
 
 @media all and (max-width: 768px) {
+	
+/*	MENU*/
+	
 	#menu .toggle{ /*nie pokazujemy czeckboxa, brak #drop*/
 		display: block;
 		color: #1ac056;
@@ -19,52 +39,81 @@
 			}
 	#menu ul{
 		display: none;
-
 	}
 	#drop:checked +ul {
-        display: block;
+        display: inline-block;
 
     }
-    
     #menu ul {
         display: none;
-        width: 100%;
-        text-align: right;
-        padding: 0;
-
+        width: 100%;  
     }
-    
     #menu ul li {
         display: block;
         width: 100%;
+		text-align: right;
+    }
+	
+	
+	#menu #menu-item .menu-item{
+		padding-right: 20px;
+	}
+	#header .main-header-content {
+        padding: 20%;
+    }
 
+/*	ABOUT*/
 	
-    }
-	
-	
-	 #header .main-header-content {
-        padding: 10%;
-    }
-	
-	
-	 #about > figure {
+	#about > figure {
         width: 100%;
+		
     }
-	 #about > figure > img {
-        max-height: inherit;
+	#about > figure > img {
+		 max-height: 350px;
     }
 	#about > article {
         width: 100%;
     }
 	h2, h4{
-		font-size: 0.9em;			
+		font-size: 1.3em;			
 	}
+	
+/*	SKILLS*/
+	
+	.styles-icon>figure{
+		margin: 2%;
+		padding-top: 10%;
+	}
+	
+/*	PORTFOLIO*/
+	
 	.portfolio-items .single-portfolio-item .single-portfolio-item-mask-border .single-portfolio-item-content p{
-		font-size: 0.8em;
+		font-size: 1.3em;
 	}
+	#portfolio .portfolio-items .single-portfolio-item{
+		display: block;
+		width: 100%;
+	}
+	#portfolio .portfolio-items #portfolio-item-1{
+		width: 100%;
+		display: block;
+	}
+	#portfolio .portfolio-items #portfolio-item-2{
+		width: 100%;
+		display: block;
+	}
+	#portfolio .portfolio-items #portfolio-item-3{
+		width: 100%;
+	}
+	
+
+	
+	
+/*	CONTACT*/
 	
 	#contact-info{
 		width: 100%;
+		display: block;
 	}
 	
 	#contact-form{
@@ -72,18 +121,20 @@
 		display: inherit;
 	}
 	.icons a{
-		margin-top: 10px;
+		margin: 0;
 	}
+	
 }
 
 @media all and (max-width: 680px) {
-/*	header*/
-	h1{
+
+/*	HEADER*/
+	#header .main-header-content h1{
 		font-size: 3em;
-	}
-	h2{
+		}
+	#header .main-header-content h2{
 		font-size: 1.5em;
-	}
+		}
 }
 
 @media all and (max-width: 480px) {
